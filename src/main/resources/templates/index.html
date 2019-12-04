@@ -1,14 +1,14 @@
 <!DOCTYPE html>
-<html lang="en">
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
 <head>
     <title>Doctor Sign In</title>
     <meta content="text/html; charset=UTF-8" http-equiv="Content-Type"/>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-<header>
+<header th:replace="header.html :: top">
     <nav>
-        <span>Doctor Secret Service</span>
+        <span>Old Doctor Secret Service OLD</span>
         <a href="/">Sign In</a>
     </nav>
 </header>
@@ -23,11 +23,11 @@
         <input type="submit" value="Sign In">
     </fieldset>
 </form>
-<footer>
+<footer th:replace="footer.html :: bottom">
     <ul>
-        <li><a href="#">Twitter</a></li>
-        <li><a href="#">Facebook</a></li>
-        <li><a href="#">TARDIS</a></li>
+        <li><a href="#">OLD Twitter</a></li>
+        <li><a href="#">OLD Facebook</a></li>
+        <li><a href="#">OLD TARDIS</a></li>
     </ul>
     <span>Copyright BBC/Terry Nation 1963</span>
 </footer>
