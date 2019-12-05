@@ -7,29 +7,21 @@
 </head>
 <body>
 <header th:replace="header.html :: top">
-    <nav>
-        <span>Old Doctor Secret Service OLD</span>
-        <a href="/">Sign In</a>
-    </nav>
 </header>
-<form method="get" action="doctor">
+
+<form th:object="${doctor}" method="get" action="doctor">
     <fieldset>
         <label for="name">Your doctor's name: </label>
-        <input id="name" name="name" type="text" placeholder="Your name here">
+                <input id="name" name="name" type="text" placeholder="Your name here">
         <hr>
         <label for="number">Your doctor's number: </label>
-        <input id="number" name="number" type="number" placeholder="0">
+                <input  id="number" name="number" type="number" placeholder="0">
         <hr>
-        <input type="submit" value="Sign In">
+                <input type="submit" value="Sign In" >
     </fieldset>
 </form>
+
 <footer th:replace="footer.html :: bottom">
-    <ul>
-        <li><a href="#">OLD Twitter</a></li>
-        <li><a href="#">OLD Facebook</a></li>
-        <li><a href="#">OLD TARDIS</a></li>
-    </ul>
-    <span>Copyright BBC/Terry Nation 1963</span>
 </footer>
 </body>
 </html>
